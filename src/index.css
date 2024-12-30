@@ -5,3 +5,65 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+
+body{
+  background-image: url("./bg.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  width: 80vw;
+  height: 90vh;
+  background-color: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(19px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  display: flex;
+}
+
+.loading{
+  padding: 50px;
+  font-size: 36px;
+  border-radius: 10px;
+  background-color: rgba(17, 25, 40, 0.9);
+}
+
+
+/* Hide scrollbar by default */
+.center {
+  overflow-y: auto; /* Allow vertical scrolling */
+  scrollbar-width: none; /* Firefox: Hide scrollbar */
+  -ms-overflow-style: none; /* IE and Edge: Hide scrollbar */
+}
+
+/* For WebKit browsers (Chrome, Safari, etc.) */
+.center::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Show scrollbar automatically when scrolling */
+.center:focus,
+.center:active,
+.center:scrolling {
+  scrollbar-width: thin; /* Firefox: Show thin scrollbar */
+}
+
+.center:focus::-webkit-scrollbar,
+.center:active::-webkit-scrollbar,
+.center:scrolling::-webkit-scrollbar {
+  width: 10px; /* WebKit: Show scrollbar when scrolling */
+}
+
+.center::-webkit-scrollbar-thumb {
+  background: #5183fe; /* Customize scrollbar thumb */
+  border-radius: 5px;
+}
+
+.center::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Customize scrollbar track */
+}
